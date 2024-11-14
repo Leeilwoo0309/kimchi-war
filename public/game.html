@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/player.css">
+    <link rel="stylesheet" href="./styles/projectile.css">
+    <link rel="stylesheet" href="./styles/ui.css">
+    <link rel="stylesheet" href="./styles/store.css">
+    <title>Kimchi War Develop Version</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div class="objects"></div>
+        <div class="projectiles"></div>
+        <div id="player-divs">
+            <!-- <div class="player blue player1">
+                <div class="info blue">
+                    <span id="nickname">어떠서</span>
+                </div>
+                <div class="hp blue player1">
+                    <div class="hp-progress later blue player1"></div>
+                    <div class="hp-progress barrier blue player1"></div>
+                    <div class="hp-progress blue player1"></div>
+                </div>
+            </div> -->
+            <div class="player checker"></div>
+        </div>
+    </main>
+    <footer>
+        <div class="status-top">
+            <div class="status-top-info blue">○○○○○ (0/5)</div>
+            <div class="status-top-score status-top-info">0 - 0</div>
+            <div class="status-top-info red">○○○○○ (0/5)</div>
+        </div>
+        <div class="kill-log"></div>
+        <div class="win-store off">
+            <div class="left">
+                <p id="now-point-span">RP - <span id="now-point">5</span></p>
+                <hr/>
+                <p id="store-title">현재 능력치</p>
+                <p class="ab">공격력: <span class="ab-c">15</span> <span class="abp">+2</span></p>
+                <p class="ab">체력: <span class="ab-c">80</span> <span class="abp">+15</span></p>
+                <p class="ab">방어력: <span class="ab-c">3</span> <span class="abp">+3</span></p>
+                <p class="ab">공격 속도: <span class="ab-c">2</span> <span class="abp">+10%</span></p>
+                <p class="ab">이동 속도: <span class="ab-c">300</span> <span class="abp">+3%</span></p>
+                <hr />
+                <div id="item-desc">
+                    <!-- <p id="item-name">공격력 증가</p>
+                    <p id="item-des">공격력 15 -> 17</p>
+                    <p id="purchase-btn">구매 (RP -1)</p> -->
+                </div>
+            </div>
+            <div class="right">
+                <!-- <div class="items">게임 시작 시 보호막 제공 (50)<p class="purchase-btn-s">구매 (RP -1)</p></div> -->
+            </div>
+        </div>
+        <div class="player-status">
+            <div id="hp-status">100 <span id="barrier-status">(50)</span></div>
+            <div id="skill-btns">
+                <div class="skill-btn">C</div>
+                <div class="skill-btn">Q</div>
+                <div class="skill-btn">E</div>
+                <div class="skill-btn">X</div>
+            </div>
+        </div>
+        <div class="tab">
+            <div id="team-tab-title">
+                <span>닉네임 (팀)</span>
+                <span>공격력</span>
+                <span>체력 (현재 체력)</span>
+                <span>방어력</span>
+                <span>공격 속도</span>
+                <span>이동 속도</span>
+            </div>
+            <div id="team-tab"></div>
+        </div>
+        <div class="status-alert-result">
+            <div id="result-text" style="margin-top: -300px;">김치 승리</div>
+        </div>
+    </footer>
+
+    <script src="../src/js/game/classes/player.js"></script>
+    <script src="../src/js/game/classes/object.js"></script>
+    <script src="../src/js/game/classes/projectile.js"></script>
+
+    <script src="../src/js/game/modules/team.js"></script>
+
+    <script src="../src/js/game/variables.js"></script>
+    <script src="../src/js/game/start.js"></script>
+    <script src="../src/js/game/reinforce.js"></script>
+    <script src="../src/js/game/update/playerMove.js"></script>
+    <script src="../src/js/game/update.js"></script>
+    <script src="../src/js/game/server.js"></script>
+    <!-- <script src="../src/js/game/start.js"></script> -->
+</body>
+</html>

@@ -1,0 +1,101 @@
+@import url("https://cdn.jsdelivr.net/gh/moonspam/NanumBarunGothic@latest/nanumbarungothicsubset.css");
+:root {
+    --player-size: 30px;
+}
+
+body {
+    user-select: none;
+    font-family: 'NanumBarunGothic';
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    /* background-image: url(../assets/imgs/stone-patch.png); */
+    background-image: url(../assets/imgs/bgc.png);
+    background-size: 150%;
+    /* background-color: rgb(223, 223, 223); */
+    /* color: rgb(20, 143, 145); */
+    height: 900px;
+}
+
+.player {
+    position: absolute;
+
+    height: var(--player-size); width: var(--player-size);
+
+    border-radius: 100%;
+}
+
+.checker {
+    opacity: 0%;
+}
+
+
+.hp {
+    margin-left: -10px;
+    margin-top: -16px;
+    border: 1px solid black;
+    border-radius: 3px;
+
+    width: 45px;
+    height: 10px;
+    
+    background-color: black;
+}
+
+.hp-progress {
+    width: 80%;
+    height: 100%;
+    
+    background-color: yellowgreen;
+}
+
+.hp-progress.barrier {
+    width: 80%;
+    height: 100%;
+    
+    background-color: rgb(255, 255, 255);
+}
+
+.hp-progress:not(.later) {
+    margin-top: -10px;
+}
+
+.hp-progress.later {
+    position: inherit;
+
+    width: 80%;
+    height: 100%;
+
+    background-color: red;
+    transition: 1200ms all ease-out;
+}
+
+#now-hp {
+    padding: 0;
+    margin: 0;
+    margin-top: -16.5px;
+    margin-left: auto;
+    
+    text-align: center;
+
+    color: rgb(255, 255, 255);
+}
+
+#nickname {
+    position: absolute;
+
+    width: 200px;
+
+    margin-top: -36px;
+    margin-left: -87px;
+
+
+    text-align: center;
+}
+
+.damage-print {
+    margin: -10px 0 0 -2px;
+
+    width: 50px;
+    height: 10px;
+}
